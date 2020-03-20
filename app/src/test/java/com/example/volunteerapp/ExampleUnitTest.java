@@ -1,4 +1,4 @@
-package com.example.healthtoday;
+package com.example.volunteerapp;
 
 import org.junit.Test;
 
