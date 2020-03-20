@@ -1,4 +1,4 @@
-package com.example.volunteerapp;
+package com.example.volunteer;
 
 import org.junit.Test;
 
