@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        opportunityButton = (Button) findViewById(R.id.button5);
+        opportunityButton = (Button) findViewById(R.id.opportunitiesButton);
         opportunityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openOpportunities() {
-        Intent intent =  new Intent(this, opportunities_activity.class);
+        Intent intent =  new Intent(this, OpportunitiesActivity.class);
         startActivity(intent);
     }
 }
