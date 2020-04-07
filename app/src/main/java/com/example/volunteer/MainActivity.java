@@ -10,6 +10,9 @@ import android.content.Intent;
 public class MainActivity extends AppCompatActivity {
 
     private Button opportunityButton;
+    private Button prepButton;
+    private Button educationButton;
+    private Button toolsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +26,25 @@ public class MainActivity extends AppCompatActivity {
                 openOpportunities();
             }
         });
+
+        prepButton = (Button) findViewById(R.id.prepButton);
+        prepButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPreperation();
+            }
+        });
+
+
     }
 
     public void openOpportunities() {
         Intent intent =  new Intent(this, OpportunitiesActivity.class);
+        startActivity(intent);
+    }
+
+    public void openPreperation() {
+        Intent intent =  new Intent(this, PrepActivity.class);
         startActivity(intent);
     }
 }

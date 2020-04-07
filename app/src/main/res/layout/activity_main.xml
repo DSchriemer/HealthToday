@@ -33,7 +33,7 @@
         android:layout_centerHorizontal="true"/>
 
     <Button
-        android:id="@+id/shiftButton"
+        android:id="@+id/prepButton"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="348dp"
         android:layout_height="92dp"
