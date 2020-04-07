@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button opportunityButton;
     private Button prepButton;
     private Button educationButton;
-    private Button toolsButton;
+    private Button toolButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        educationButton = (Button) findViewById(R.id.educationButton);
+        educationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openEducation();
+            }
+        });
+
+        toolButton = (Button) findViewById(R.id.toolButton);
+        toolButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTools();
+            }
+        });
+
 
     }
 
@@ -45,6 +61,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void openPreperation() {
         Intent intent =  new Intent(this, PrepActivity.class);
+        startActivity(intent);
+    }
+
+    public void openEducation() {
+        Intent intent =  new Intent(this, EducationActivity.class);
+        startActivity(intent);
+    }
+
+    public void openTools() {
+        Intent intent =  new Intent(this, ToolsActivity.class);
         startActivity(intent);
     }
 }
