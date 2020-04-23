@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/tmpButton"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="355dp"
         android:layout_height="98dp"
@@ -18,7 +18,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="10dp"
-        android:text="Activity 2"
+        android:text="Waiting till hospital techs are free to help with this page"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
